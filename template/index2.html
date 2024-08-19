@@ -11,16 +11,16 @@
         <header>
             <div class="top">
                 <div class="left">
-                    <a href="#">Home</a>
-                    <a href="#">News</a>
-                </div>
-                <div class="right">
-                    <a href="#">Compare browsers</a>
-                    <a href="#">About</a>
+                    <a class="buttonlink1" href="#">Home</a>
+                    <a class="buttonlink1" href="#">News</a>
                 </div>
                 <div class="centre">
                     <span class="date"></span>
-                    <a href="#">8 new features</a>
+                    <a class="links1" href="#">8 new features</a>
+                </div>
+                <div class="right">
+                    <a class="buttonlink1" href="#">Compare browsers</a>
+                    <a class="buttonlink1" href="#">About</a>
                 </div>
             </div>
             <div class="centre">
@@ -28,21 +28,18 @@
                     <span class="legend"><a href="#">Can I Use</a></span>
                     <input type="text">
                     <span class="legend">?</span>
-                    <span class="settings"><a href="#"><img src="" alt="settings"></a></span>
+                    <span class="settings"><a href="#"><img src="../../assets/settings_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="settings"></a></span>
                     <span><a href="#">Settings</a></span>
                 </div>
             </div>
             <div class="bottom">
-                <div class="left"><a href="#">Index of features</a></div>
+                <div class="left"><a class="buttonlink1" href="#">Index of features</a></div>
                 <div class="right">
-                    <!-- this is a button -->
-                    <a href="#">
-                    <div class="features">
-                        <img src="" alt="filter-icon">
+                    <button class="button1"><div>
+                        <img src="../../assets/filter_alt_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="filter-icon">
                         <span>Filter features</span> 
-                    </div>
-                    </a>
-                    <div>
+                    </div></button>
+                    <div class="features">
                         <div class="Categories">
                             <label for="1">All</label>
                             <input type="checkbox" name="category" id="1">
@@ -94,6 +91,8 @@
                             <input type="checkbox" name="status" id="8a">
                         </div>
                     </div>
+                </div>
+            </div>
                     <div>
                         <span>List sort</span>
                         <br>
@@ -112,59 +111,60 @@
             </div>
         </header>
         <section>
-            <div class="card">
+            <div class="card one">
                 <h2>Latest features</h2>
                 <ul>
-                    <li><a href="#">WebAssembly BigInt to i64 conversion in JS API</a></li>
-                    <li><a href="#">WebAssembly Threads and Atomics</a></li>
-                    <li><a href="#">WebAssembly Multi-Value</a></li>
-                    <li><a href="#">WebAssembly Import/Export of Mutable Globals</a></li>
-                    <li><a href="#">WebAssembly Non-trapping float-to-int Conversion</a></li>
+                    <li><a class="links1" href="#">WebAssembly BigInt to i64 conversion in JS API</a></li>
+                    <li><a class="links1" href="#">WebAssembly Threads and Atomics</a></li>
+                    <li><a class="links1" href="#">WebAssembly Multi-Value</a></li>
+                    <li><a class="links1" href="#">WebAssembly Import/Export of Mutable Globals</a></li>
+                    <li><a class="links1" href="#">WebAssembly Non-trapping float-to-int Conversion</a></li>
                 </ul>
             </div>
-            <div class="card">
+            <div class="card two">
                 <h2>Most searched features</h2>
                 <ol>
-                    <li><a href="#">WebP image format</a></li>
-                    <li><a href="#">Flexbox</a></li>
-                    <li><a href="#">gap property for Flexbox</a></li>
-                    <li><a href="#">CSS Grid</a></li>
-                    <li><a href="#">WebGL</a></li>
+                    <li><a class="links1" href="#">WebP image format</a></li>
+                    <li><a class="links1" href="#">Flexbox</a></li>
+                    <li><a class="links1" href="#">gap property for Flexbox</a></li>
+                    <li><a class="links1" href="#">CSS Grid</a></li>
+                    <li><a class="links1" href="#">WebGL</a></li>
                 </ol>
             </div>
-            <div class="card">
+            <div class="card three">
                 <h2>Test a feature</h2>
-                <p>Our partnership with BrowserStack now lets you test your website for compatibility across 2,000+ real browsers and devices.</p>
+                <p>Our partnership with <span><a class="links1" href="#">BrowserStack</a></span> now lets you test your website for compatibility across 2,000+ real browsers and devices.</p>
                 <span>Test on:</span>
                 <br>
                 <div></div>
                 <ul>
-                    <li>IE 11</li>
-                    <li>Safari 17</li>
+                    <li><a class="links1" href="#"></a>IE 11</li>
+                    <li><a class="links1" href="#"></a>Safari 17</li>
                 </ul>
                 <ul>
-                    <li>Safari on iPhone 14</li>
-                    <li>Chrome on Galaxy S23</li>
+                    <li><a class="links1" href="#"></a>Safari on iPhone 14</li>
+                    <li><a class="links1" href="#"></a>Chrome on Galaxy S23</li>
                 </ul>
             </div>
-            <div class="card">
+            <div class="card four">
                 <h2>Did you know?</h2>
                 <p>By default, older browser versions are only shown if they have >= 0.5% usage share. You can increase or decrease this value from the Settings panel.</p>
                 <a href="#">Next</a>
             </div>
-            <div class="card">
+            <div class="card five">
                 <h2>Third party tools</h2>
                 <div class="content">
                     <ul>
-                        <li><a href="#">The CanIUse Embed — Add support tables to your site</a></li>
-                        <li><a href="#">Caniuse Component — Add support tables to your presentations</a></li>
-                        <li><a href="#">Caniuse command line tool</a></li>
-                        <li><a href="#">Doiuse...? — Lint your CSS to check what features work</a></li>
-                        <li><a href="#">I want to use — Select multiple features and see what % of users can use them</a></li>
+                        <li><a class="links1" href="#">The CanIUse Embed — Add support tables to your site</a></li>
+                        <li><a class="links1" href="#">Caniuse Component — Add support tables to your presentations</a></li>
+                        <li><a class="links1" href="#">Caniuse command line tool</a></li>
+                        <li><a class="links1" href="#">Doiuse...? — Lint your CSS to check what features work</a></li>
+                        <li><a class="links1" href="#">I want to use — Select multiple features and see what % of users can use them</a></li>
                     </ul>
                 </div>
+                <span><a class="links1" href="#">See full list</a></span>
             </div>
-            <div class="card">
+            <div class="card six">
                 <h2>Browser scores</h2>
                 <div class="version">
                     <a class="versions" href="#">Current verison</a>
@@ -175,59 +175,55 @@
                     <div class="browser">Firefox 129: 415</div>
                     <div class="browser">Chrome 127: 432</div>
                 </div>
-                <span><a href="#">About these scores</a></span>
+                <span><a class="links1" href="#">About these scores</a></span>
             </div>
         </section>
         <footer>
-            <div class="slots">
-                <!-- make this h2 or h3 -->
-                <span>Can I use...</span>   
+            <div class="slots s-one">
+                <h2>Can I use...</h2>   
                 <br>
                 <br>
                 <span>Browser support tables for modern web technologies</span>
                 <br>
-                <span>Created & maintained by </span><a href="#">@Fyrd</a><span>, design by </span><a href="#">@Lensco</a><span>.</span>
+                <span>Created & maintained by </span><a class="links1" href="#">@Fyrd</a><span>, design by </span><a class="links1" href="#">@Lensco</a><span>.</span>
                 <br>
-                <span>Support data contributions by the GitHub </span><a href="#">community</a><span>.</span>
+                <span>Support data contributions by the GitHub </span><a class="links1" href="#">community</a><span>.</span>
                 <br>
-                <span>Usage share statistics by </span><a href="#">StatCounter GlobalStats</a><span> for July, 2024</span>
+                <span>Usage share statistics by </span><a class="links1" href="#">StatCounter GlobalStats</a><span> for July, 2024</span>
                 <br>
-                <span>Location detection provided by </span><a href="#">ipinfo.io</a><span>.</span>
+                <span>Location detection provided by </span><a class="links1" href="#">ipinfo.io</a><span>.</span>
                 <br>
-                <span>Browser testing done via </span><a href=""><img src="" alt="BrowserStack-icon"></a><span class="BrowserStack"> BrowserStack</span>
+                <span>Browser testing done via </span><a class="links1" href=""><img src="../../assets/icons8-browserstack-logo-48.png" alt="BrowserStack-icon"></a><span class="BrowserStack"> BrowserStack</span>
             </div>
-            <div class="slots">
-                <!-- make this h2 -->
-                <span>Support via Patreon</span> 
+            <div class="slots s-two">
+                <h2>Support via Patreon</h2> 
                 <br>
                 <br>
                 <span class = txtwrap>Become a caniuse Patron to support the site and disable ads for only $1/month!</span>
                 <br>
-                <a href="#">
+                <a href="#" class="buttonlink">
                     <div>
-                        <img src="" alt="Patreon logo">
+                        <img src="../../assets/icons8-patreon-logo-48.png" alt="Patreon logo">
                         <span>BECOME A PATRON</span>
                         <br>
                         <br>
-                        <span>or </span><a href="#">Log in</a>
+                        <span>  or </span><a class="links1" href="#">Log in</a>
                     </div></a>
             </div>
-            <div class="slots">
-                <!-- make this h2 -->
-                 <span>Site links</span>
+            <div class="slots s-three">
+                <span>Site links</span>
                  <br>
                  <br>
                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Feature index</a></li>
-                    <li><a href="#">Browser usage table</a></li>
-                    <li><a href="#">Feature suggestion list</a></li>
-                    <li><a href="#">Caniuse data on GitHub</a></li>
+                    <li><a class="links1" href="#">Home</a></li>
+                    <li><a class="links1" href="#">Feature index</a></li>
+                    <li><a class="links1" href="#">Browser usage table</a></li>
+                    <li><a class="links1" href="#">Feature suggestion list</a></li>
+                    <li><a class="links1" href="#">Caniuse data on GitHub</a></li>
                  </ul>
             </div>
-            <div class="slots">
-                <!-- make this h2 -->
-                <span>Legend</span>
+            <div class="slots s-four">
+                <h2>Legend</h2>
                 <br>
                 <br>
                 <ul>
@@ -237,7 +233,7 @@
                     <li><span>= Support unknown</span></li>
                 </ul>
                 <br>
-                <span><a href="#">Enable color-blind friendly colors</a></span>
+                <span><a class="links1" href="#">Enable color-blind friendly colors</a></span>
             </div>
         </footer>
     </div>
