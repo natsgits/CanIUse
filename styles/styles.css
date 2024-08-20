@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  background-color: rgba(0, 0, 0, 0.747);
 }
 
 .parent-container {
@@ -15,28 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-header {
-  width: 100%;
-  height: 30%;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-header .top, header .centre, header .bottom {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header .top .left, header .top .centre, header .top .right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .links1 {
@@ -57,55 +37,90 @@ header .top .left, header .top .centre, header .top .right {
   color: orange;
 }
 
+.links3 {
+  color: darkgreen;
+  background-color: orange;
+  padding: 0.2rem;
+  text-decoration: none;
+}
+
+.links4 {
+  color: grey;
+  background-color: lightgrey;
+  padding: 0.2rem;
+  text-decoration: none;
+}
+
 .buttonlink1 {
+  width: 100%;
   background-color: grey;
   text-decoration: none;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  height: 2rem;
+  font-size: 1rem;
+  height: 1.4rem;
   padding: 1rem 0.4rem;
   margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttonlink1:hover {
   background-color: orange;
 }
 
-.buttonlink {
+a.buttonlink {
   background-color: pink;
-  color: white;
+  color: brown;
   text-transform: uppercase;
   text-decoration: none;
+  width: 9rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
+}
+a.buttonlink img {
+  height: 2rem;
+  width: 2rem;
+  padding: 0.2rem;
 }
 
 .buttonlink2 {
+  width: 100%;
   background-color: darkgreen;
   text-decoration: none;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  height: 2rem;
+  font-size: 1rem;
+  height: 1.4rem;
   padding: 1rem 0.4rem;
   margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 1rem;
+  padding: 0.2rem;
 }
 
 .buttonlink2:hover {
-  background-color: white;
+  background-color: orange;
 }
 
 .button1 {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: grey;
   color: white;
-  height: 2rem;
-  font-size: 1.4rem;
-  padding: 0.4rem 1rem;
+  height: 1.4rem;
+  padding: 1rem 0.4rem;
+  border: none;
+  cursor: pointer;
 }
 .button1 div {
   display: flex;
@@ -119,11 +134,133 @@ header .top .left, header .top .centre, header .top .right {
 .button1 div span {
   padding-left: 0.4rem;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .button1:hover {
   background-color: orange;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .top {
+  width: 100%;
+}
+
+header .top, header .centre, header .bottom {
+  height: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .top .left {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .top .centre {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+header .top .right {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > .centre {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 123, 0);
+  padding: 0 3rem;
+}
+
+header > .centre .centrepiece {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header > .centre .centrepiece input {
+  height: 2.8rem;
+  width: 20rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgb(205, 151, 50);
+  color: white;
+  padding-right: 2rem;
+}
+
+header > .centre .centrepiece span.legend {
+  font-size: 2.8rem;
+  color: lightgoldenrodyellow;
+  padding-right: 1rem;
+}
+header > .centre .centrepiece span.legend a {
+  font-size: 2.8rem;
+  color: lightgoldenrodyellow;
+  text-decoration: none;
+  padding-right: 2rem;
+}
+
+header > .centre .centrepiece span.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > .centre .centrepiece span.settings a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: lightgoldenrodyellow;
+  padding-right: 1rem;
+  font-size: 1.4rem;
+}
+header > .centre .centrepiece span.settings a img {
+  height: 2rem;
+  width: 2rem;
+}
+
+header .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .bottom .left {
+  width: 68%;
+  padding-left: 0.2rem;
+}
+
+header .bottom .right {
+  width: 31%;
+  padding-right: 0.2rem;
+}
+
+.popTab {
+  display: none;
+  position: absolute;
 }
 
 .features {
@@ -157,18 +294,47 @@ header .top .left, header .top .centre, header .top .right {
 }
 
 section {
-  padding: 2rem;
-  height: 40%;
+  padding: 1rem;
+  height: 50%;
   display: grid;
   grid-template-areas: "one two three" "four five six";
   gap: 1.2rem;
 }
 
+section .card h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.browsers > * {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.browsers1 {
+  background-color: lightblue;
+}
+
+.browsers2 {
+  background-color: lightgreen;
+}
+
+.browsers3 {
+  background-color: lightgrey;
+}
+
 footer {
   height: 30%;
+  width: 100%;
+  padding: 0 1rem;
   display: grid;
   gap: 2rem;
-  grid-template-areas: "sone stwo sthree sfour";
+  grid-template-areas: "s-one s-two s-three s-four";
 }
 
 /*# sourceMappingURL=styles.css.map */
