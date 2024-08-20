@@ -78,6 +78,14 @@ header .top .left,header .top .centre,header .top .right{
     justify-content: center;
     align-items: center;
  }
+
+ .buttonlink2{
+    @include buttonlinks($link: darkgreen);
+ }
+
+ .buttonlink2:hover{
+    @include buttonlinkshover($link: white);
+ }
  
  .button1{
     display: flex;
@@ -109,7 +117,9 @@ header .top .left,header .top .centre,header .top .right{
 }
 
 .features{
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
